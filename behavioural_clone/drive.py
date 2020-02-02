@@ -45,6 +45,6 @@ def img_preprocess(img):
   return img
 
 if __name__ == '__main__':
-    model = load_model('salman_model.h5')
+    model = load_model('new_model.h5')
     app = socketio.Middleware(sio, app)
     eventlet.wsgi.server(eventlet.listen(('', 4567)), app)
